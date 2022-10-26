@@ -60,12 +60,12 @@ button:active {
 
 /* desktop styles */
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
   .App {
     padding: 1em;
-    margin: 0 20rem;
+    margin: 0 25rem;
     font-size: .9em;
-    text-align: center
+    text-align: center;
   }
 
   img {
