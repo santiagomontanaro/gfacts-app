@@ -1,0 +1,74 @@
+/* mobile first */
+
+body {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: rgb(54, 69, 181);
+  background: linear-gradient(180deg, rgba(54, 69, 181, 1) 7%, rgba(244, 45, 253, 1) 100%);
+  background-attachment: fixed;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - 34px);
+  gap: 2em;
+  font-size: .7em;
+  color: #F1F1F1;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 2em;
+}
+
+img {
+  border: 1px solid #F1F1F1;
+  border-radius: calc(1em / 2);
+  box-shadow: 0 10px 1em rgba(0, 0, 0, 0.5);
+  transition: 0.2s ease-in-out;
+  width: 300px;
+  height: 300%;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+button {
+  background: #F1F1F1;
+  border: none;
+  border-radius: 1em;
+  color: #3635B5;
+  font-size: 1.4em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+button:active {
+  outline: none;
+}
+
+/* desktop styles */
+
+@media (min-width: 900px) {
+  .App {
+    padding: 1em;
+    margin: 0 20rem;
+    font-size: .9em;
+    text-align: center
+  }
+
+  img {
+    width: 100%;
+  }
+}
